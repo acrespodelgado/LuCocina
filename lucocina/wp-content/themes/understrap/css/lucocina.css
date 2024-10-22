@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+:root {
+    --bs-black: black;
+    --bs-green: #063124;
+    --bs-blue: #132337;
+    --bs-gold: #C9A15B;
+    --bs-grey: #D9D9D9;
+    --bs-white: #FFFF;
+    --font-ibarra: "Ibarra Real Nova", serif;
+    --margin-m: 1.5rem;
+}
+
+body {
+    font-family: var(--font-ibarra);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.wrapper {
+    padding: 0;
+}
+
+#content {
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+a:hover {
+    transition: all 0.2s ease-in;
+    opacity: 0.7;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+h3 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.btn {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0.5rem 4rem;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+.btn-gold {
+    background: var(--bs-gold);
+    color: var(--bs-white);
+    border: 1px solid var(--bs-gold);
+    transition: all 0.3s ease-in;
+}
+
+.btn-gold:hover {
+    background: var(--bs-white);
+    color: var(--bs-gold);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.green-background {
+    background-color: var(--bs-green);
+}
+
+.e-con-inner {
+    padding: 0 !important;
+}
+
+.slider h1 {
+    font-family: var(--font-ibarra) !important;
+    font-size: 70px !important;
+    font-weight: 400 !important;
+    color: var(--bs-white) !important;
+    text-transform: uppercase !important;
+    line-height: 1.5rem !important;
+}
+
+/* -- Header -- */
+
+/* --- Overlay desplegable --- */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 60px;
+}
+
+.show-xs {
+    display: none;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* --- Menú sin desplegar --- */
+
+#wrapper-navbar #main-nav {
+    background: transparent;
+    padding: 0.5rem 3rem 0.5rem;
+    color: var(--bs-white);
+    transition: all 0.3s ease-in;
+  }
+  #wrapper-navbar #main-nav > * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  #wrapper-navbar #main-nav .navbar-brand {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    min-height: 116px;
+  }
+  #wrapper-navbar #main-nav .navbar-brand .logo {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    -moz-transition: all 1s ease-in-out !important;
+    -o-transition: all 1s ease-in-out !important;
+    -webkit-transition: all 1s ease-in-out !important;
+    transition: all 1s ease-in-out !important;
+    max-width: 120px;
+  }
+  #wrapper-navbar #main-nav .navbar-brand .logo-text {
+    opacity: 1;
+    -moz-transition: all 0s ease-in-out !important;
+    -o-transition: all 0s ease-in-out !important;
+    -webkit-transition: all 0s ease-in-out !important;
+    transition: all 0s ease-in-out !important;
+  }
+  #wrapper-navbar #main-nav #openNav {
+    -moz-transition: all 0.5s ease !important;
+    -o-transition: all 0.5s ease !important;
+    -webkit-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--bs-white);
+    font-size: 40px;
+    padding-left: 0px;
+  }
+  #wrapper-navbar #main-nav #openNav:hover {
+    color: var(--bs-gold);
+  }
+  #wrapper-navbar #closeNav img {
+    width: 30px;
+  }
+  #wrapper-navbar.transparent #main-nav {
+    color: white;
+    padding-top: 40px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  #wrapper-navbar.transparent #main-nav .navbar-brand {
+    text-align: center;
+    margin: 0px;
+  }
+  #wrapper-navbar.transparent #main-nav .navbar-brand .logo {
+    z-index: 1000;
+    opacity: 1;
+    -moz-transition: all 0s ease-in-out !important;
+    -o-transition: all 0s ease-in-out !important;
+    -webkit-transition: all 0s ease-in-out !important;
+    transition: all 0s ease-in-out !important;
+    max-width: inherit;
+  }
+  #wrapper-navbar.transparent #main-nav .navbar-brand .logo-text {
+    opacity: 1;
+    -moz-transition: all 1s ease-in-out !important;
+    -o-transition: all 1s ease-in-out !important;
+    -webkit-transition: all 1s ease-in-out !important;
+    transition: all 1s ease-in-out !important;
+  }
+  #wrapper-navbar.transparent #main-nav #openNav {
+    -moz-transition: all 0.5s ease !important;
+    -o-transition: all 0.5s ease !important;
+    -webkit-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 40px;
+  }
+  #wrapper-navbar.transparent #main-nav #openNav:hover {
+    color: var(--bs-white);
+  }
+
+  #wrapper-navbar .button-block {
+    z-index: 1000;
+  }
+
+  #wrapper-navbar .button-block a.btn {
+    margin-left: 1.5rem;
+  }
+
+  /* -- Menú hamburguesa desplegado -- */
+  #wrapper-navbar.transparent .overlay .closebtn {
+    top: 38px;
+    left: 45px;
+  }
+  #wrapper-navbar .overlay {
+    background: var(--bs-blue);
+  }
+  #wrapper-navbar .overlay a {
+    color: var(--bs-white);
+  }
+  #wrapper-navbar .overlay a:hover {
+    color: var(--bs-gold);
+  }
+  #wrapper-navbar .overlay .closebtn {
+    left: 50px;
+  }
+  #wrapper-navbar .overlay .overlay-content {
+    min-width: 100vw;
+  }
+  #wrapper-navbar .overlay .navbar-nav .dropdown-menu {
+    position: relative !important;
+    transform: none !important;
+    text-align: center;
+    background: transparent;
+    border: none;
+    float: none;
+  }
+  #wrapper-navbar .overlay .navbar-nav .dropdown-menu a {
+    background: transparent !important;
+  }
+  #wrapper-navbar .overlay .navbar-nav .dropdown-menu a:hover {
+    background: transparent;
+  }
+
+/* -- Concepto -- */
+
+.btn-white a.elementor-button {
+    padding: 0.75rem 3rem;
+    color: var(--bs-gold);
+    border: 1px solid var(--bs-white);
+    background: var(--bs-white);
+    transition: all 0.3s ease-in;
+    text-transform: uppercase;
+}
+
+.btn-white a.elementor-button:hover {
+    border: 1px solid var(--bs-gold) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.elementor-element.e-con-full.e-flex {
+    padding-top: 0;
+}
+
+/* -- Footer -- */
+
+footer .green-background {
+    padding-top:6rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+footer .green-background span {
+    color: var(--bs-gold);
+    font-size: 12px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+footer .green-background h3 {
+    color: var(--bs-white);
+    text-transform: uppercase;
+    margin-bottom: var(--margin-m);
+}
+
+footer .green-background p {
+    color: var(--bs-white);
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: var(--margin-m);
+}
+
+footer .green-background .img-background {
+    background: url(../../../../img/mapa_jerez.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+footer .green-background .btn-gold {
+    margin-top: var(--margin-m);
+}
+
+footer .blue-background {
+    background: var(--bs-blue);
+}
+
+footer .blue-background a {
+    color: var(--bs-white);
+}
+
+footer .blue-background .social-networks {
+    padding-top: var(--margin-m);
+    padding-bottom: 1rem;
+}
+
+footer .blue-background .social-networks p {
+    color: var(--bs-white);
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+footer .blue-background .bordered {
+    border-top: 1.72px solid var(--bs-gold);
+    border-bottom: 1.72px solid var(--bs-gold);
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+footer .blue-background h3 {
+    margin-bottom: var(--margin-m);
+}
+
+footer .blue-background h3 a,
+footer .blue-background h4 a,
+footer .blue-background h4 {
+    color: var(--bs-gold);
+    text-transform: uppercase;
+}
+
+footer .blue-background h4,
+footer .blue-background h4 a {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+footer .blue-background span,
+footer .blue-background span a {
+    color: var(--bs-white);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+footer .blue-background span a {
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+footer .blue-background .site-info a {
+    padding-right: 20px;
+}
+
+footer .blue-background .site-info a,
+footer .blue-background .site-info p {
+    color: var(--bs-white);
+    font-size: 12px;
+    line-height: 80px;
+    margin-bottom: 0;
+}
