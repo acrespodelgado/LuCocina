@@ -62,18 +62,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 				<div class="row bordered">
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<h3><a href="<?php echo get_site_url();?>/conocenos" title="<?php _e( 'Conócenos', 'understrap-master' ); ?>"><?php _e( 'Conócenos', 'understrap-master' ); ?></a></h3>
 						<h4><a href="<?php echo get_site_url();?>/menu" title="<?php _e( 'Menú', 'understrap-master' ); ?>"><?php _e( 'Menú', 'understrap-master' ); ?></a></h4>
 					</div>
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<h3><a href="<?php echo get_site_url();?>/contacto" title="<?php _e( 'Contacto', 'understrap-master' ); ?>"><?php _e( 'Contacto ', 'understrap-master' ); ?></a></h3>
 						<div class="row">
-							<div class="col-6">
+							<div class="col-12 col-md-6">
 								<h4><?php _e( 'Email', 'understrap-master' ); ?></h4>
 								<span><a href="mailto:info@lucocinayalma.com" target="_blank"><?php _e( 'info@lucocinayalma.com', 'understrap-master' ); ?></a></span>
 						</div>
-							<div class="col-6">
+							<div class="col-12 col-md-6">
 								<h4><?php _e( 'Ubicación', 'understrap-master' ); ?></h4>
 								<span><a href="https://maps.app.goo.gl/aLmM2hn2iF7bg47x8" target="_blank"><?php _e( 'C/Zaragoza, 2', 'understrap-master' ); ?></a></span><span><?php _e( 'Jerez De La Frontera', 'understrap-master' ); ?></span>
 							</div>
@@ -81,14 +81,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 				<div class="row site-info">
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<ul class="m-0 list-unstyled list-inline float-md-left">
 							<li class="list-inline-item"><a href="<?php echo get_site_url();?>/aviso-legal" title="<?php _e( 'Aviso legal', 'understrap-master' ); ?>"><?php _e( 'Aviso legal ', 'understrap-master' ); ?></a></li>
 							<li class="list-inline-item"><a href="<?php echo get_site_url();?>/politica-privacidad" title="<?php _e( 'Política de privacidad', 'understrap-master' ); ?>"><?php _e( 'Política de privacidad', 'understrap-master' ); ?></a></li>
 							<li class="list-inline-item"><a href="<?php echo get_site_url();?>/politica-cookies" title="<?php _e( 'Política de cookies', 'understrap-master' ); ?>"><?php _e( 'Política de cookies', 'understrap-master' ); ?></a></li>
 						</ul>
 					</div>
-					<div class="col-6 text-right">
+					<div class="col-12 col-md-6 text-right-md">
 						<p><?php _e( 'LÚ ', 'understrap-master' ); ?><?php echo date("Y"); ?></p>
 					</div>
 				</div>

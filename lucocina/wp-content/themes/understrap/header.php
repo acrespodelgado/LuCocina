@@ -77,6 +77,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="<?php echo get_site_url(); ?>/reservas" title= "<?php _e( 'Reserva', 'understrap-master' ); ?>" class="btn btn-gold"><?php _e( 'Reserva', 'understrap-master' ); ?></a>
 				<a href="/tienda" title= "<?php _e( 'Tienda', 'understrap-master' ); ?>" class="btn btn-gold"><?php _e( 'Tienda', 'understrap-master' ); ?></a>
 			</div>
+			<div class="d-block d-md-none">
+				<a href="<?php echo get_site_url(); ?>/reservas"  title= "<?php _e( 'Reserva', 'understrap-master' ); ?>" ><img src="<?php echo get_site_url();?>/img/reserva_icon.svg" alt="<?php _e( 'Reservas icon', 'understrap-master' ); ?>"></a>
+				<a href="/tienda" title= "<?php _e( 'Tienda', 'understrap-master' ); ?>"><img src="<?php echo get_site_url();?>/img/tienda_icon.svg" alt="<?php _e( 'Tienda icon', 'understrap-master' ); ?>"></a>
+			</div>
 		</div>
 	</nav><!-- .navbar -->
 </div><!-- #wrapper-navbar end -->
