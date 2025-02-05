@@ -1,3 +1,5 @@
+# LuCocina
+
 Proyecto web fullstack desarrollado en solitario para Agencia Enbloque. Encargado para el chef con 2 estrellas michelín Juanlu Fernández.
 
 - Desarrollo de web informativa con panel de reservas. Realizada en wordpress personalizado.
